@@ -176,16 +176,14 @@ footer {
     <div id="chatBody"></div>
     <div id="typingInfo" style="padding: 2px 15px; font-size: 11px; color: #555; height: 16px;"></div>
 
-    <footer>
-        <label class="icon">📎<input type="file" id="imgInp" hidden accept="image/*"></label>
-        <div class="input-wrap">
-            <input type="text" id="msgInp" placeholder="Type a message..." oninput="pushTyping()">
-            <span id="mic" class="icon" onclick="pushVoice()">🎙️</span>
-        </div>
+   <footer>
+    <label class="icon">📎<input type="file" id="imgInp" hidden accept="image/*"></label>
+    <div class="input-wrap">
+        <input type="text" id="msgInp" placeholder="Type a message..." oninput="pushTyping()">
         <button class="send-btn" onclick="pushSend()">➤</button>
-    </footer>
-</div>
-
+    </div>
+    <span id="mic" class="icon" onclick="pushVoice()">🎙️</span>
+</footer>
 <div id="confOverlay">
     <div id="jitsiArea" style="height:100%;"></div>
     <button onclick="endCall()" style="position:absolute; bottom:30px; left:50%; transform:translateX(-50%); background:#ff3b30; color:white; border:none; padding:12px 35px; border-radius:30px; font-weight:bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">End Call</button>
